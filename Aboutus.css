@@ -1,0 +1,60 @@
+/* HEADER ABOUT */
+
+.about-header{
+
+margin-top:70px;
+padding:100px 20px;
+
+background:linear-gradient(135deg,#6366f1,#a855f7);
+
+color:white;
+
+text-align:center;
+
+border-radius:0 0 50px 50px;
+
+}
+
+.about-header h1{
+
+font-size:40px;
+font-weight:800;
+margin-bottom:10px;
+
+}
+
+.about-header p{
+
+opacity:0.9;
+font-size:18px;
+
+}
+
+
+
+/* CONTENT ABOUT */
+
+.about-list{
+
+margin-top:10px;
+padding-left:20px;
+
+}
+
+.about-list li{
+
+margin-bottom:10px;
+font-weight:500;
+
+}
+
+
+
+/* CARD SPACING */
+
+.card p{
+
+line-height:1.7;
+margin-bottom:15px;
+
+}

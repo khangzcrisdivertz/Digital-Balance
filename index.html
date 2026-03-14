@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Balance - Sống Khỏe Mỗi Ngày</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <div class="header-overlay"></div>
+
+    <div class="container header-content">
+        <div class="header-text">
+            <i class="fas fa-leaf icon-logo"></i>
+            <h1>Digital Balance</h1>
+            <p>SỐNG CHẬM LẠI GiỮA THẾ GIỚI SỐ</p>
+            <p class="header-slogan">Chào ngày mới! Hãy để màn hình phục vụ bạn, đừng để nó nuốt chửng bạn. ✨</p>
+            <button class="btn-scroll">Kiểm tra ngay <i class="fas fa-arrow-down"></i></button>
+        </div>
+        
+        <div class="header-image">
+            <img src="Hook on your phone.png" alt="Digital Balance Illustration" class="floating-image">
+        </div>
+    </div>
+</header>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+
+        <div class="logo">
+            <i class="fas fa-leaf"></i> DigitalBalance
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="Index.html" class="nav-link active">Home</a></li>
+            <li><a href="Aboutus.html" class="nav-link">About Us</a></li>
+        </ul>
+
+    </div>
+</nav>
+    <div id="theme-toggle" class="theme-btn">
+        <i class="fas fa-moon"></i>
+    </div>
+    <main class="container">
+        <section class="card glass" id="journal">
+            <h2><i class="fas fa-edit"></i> Nhật ký hôm nay</h2>
+            
+            <div class="input-box">
+                <label>Tổng thời gian dùng máy (giờ)</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-mobile-alt"></i>
+                    <input type="number" id="phone" placeholder="0" min="0" max="24">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label>Thời gian mạng xã hội (giờ)</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-share-alt"></i>
+                    <input type="number" id="social" placeholder="0" min="0" max="24">
+                </div>
+            </div>
+
+        
+        </section>
+
+        <section class="card glass">
+            <h2><i class="fas fa-chart-line"></i> Đánh giá</h2>
+            <div id="status-tag" class="tag">Sẵn sàng</div>
+            
+            <div class="progress-wrapper">
+                <div class="progress-bar-container">
+                    <div id="progress-fill"></div>
+                </div>
+                <span id="percent-label">0%</span>
+            </div>
+
+            <p id="feedback-text" style="margin-bottom: 20px;">Nhấn nút phân tích để xem kết quả.</p>
+
+            <div class="comparison-grid">
+                <div class="comp-header">
+                    Với <span id="hours-display">0</span> giờ sử dụng, bạn có thể:
+                </div>
+                <div class="comp-item">
+                    <i class="fas fa-book"></i>
+                    <span id="read-pages">0</span>
+                    <small>Trang sách</small>
+                </div>
+                <div class="comp-item">
+                    <i class="fas fa-walking"></i>
+                    <span id="walk-km">0</span>
+                    <small>Km đi bộ</small>
+                </div>
+            </div>
+        </section>
+<button onclick="analyze()" class="btn-primary">
+    Phân tích dữ liệu <i class="fas fa-bolt"></i>
+</button>
+
+
+
+
+
+<div id="result-box" class="result-box">
+    <table>
+        <tr>
+            <th>Kết quả</th>
+            <th>Giá trị</th>
+        </tr>
+
+        <tr>
+            <td>Tổng giờ dùng máy</td>
+            <td id="table-phone">0</td>
+        </tr>
+
+        <tr>
+            <td>Giờ mạng xã hội</td>
+            <td id="table-social">0</td>
+        </tr>
+
+        <tr>
+            <td>Đánh giá</td>
+            <td id="table-status">Chưa có</td>
+        </tr>
+    </table>
+</div>
+
+        <section class="card glass full-width">
+            <h3><i class="fas fa-lightbulb"></i> Lời khuyên cho bạn</h3>
+            <p id="advice-content">Dành thời gian cho bản thân thay vì lướt màn hình vô định.</p>
+        </section>
+    </main>
+
+<section class="card glass full-width book-section">
+
+<h2><i class="fas fa-book-open"></i> Sách gợi ý</h2>
+
+<div class="book-grid">
+
+<div class="book-card">
+
+<h3>Dopamine Nation</h3>
+
+<p>
+Cuốn sách nổi tiếng giúp bạn hiểu rõ cách dopamine ảnh hưởng đến
+thói quen và sự nghiện công nghệ trong cuộc sống hiện đại.
+</p>
+
+<a href="https://www.fahasa.com/dopamine-nation.html?srsltid=AfmBOopxUcbokJFKk9BSFGKT047FdKl0Txp93Opg5sBvZRNCshu5bPdElYY"
+target="_blank"
+class="book-btn">
+Xem sách
+</a>
+
+</div>
+
+
+<div class="book-card">
+
+<h3>Dopamine Detox</h3>
+
+<p>
+Hướng dẫn thực hành giúp bạn thanh lọc tâm trí,
+loại bỏ các nguồn dopamine ảo và tập trung vào những điều quan trọng.
+</p>
+
+<a href="https://www.fahasa.com/dopamine-detox-thanh-loc-tam-tri-de-tap-trung-vao-nhung-dieu-quan-trong-nhat.html?srsltid=AfmBOorV5-MZ_FVnYdxBFPDknz8Ws3iIfMCto-VpV1oH-KFLPIBhZlcks_Q"
+target="_blank"
+class="book-btn">
+Xem sách
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+    <p>© 2026 Bản quyền thuộc về <b>Nhóm Iran</b></p>
+    <p>Liên hệ <b>khangdtts02586@gmail.com</b> hoặc <b>angqts02509@gmail.com</b> thông qua <a href="https://mail.google.com/mail/u/0/#inbox" style="text-decoration: none; color: purple;">email</a></p>
+</footer>
+</body>
+</html>
