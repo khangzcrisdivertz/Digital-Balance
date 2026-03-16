@@ -38,12 +38,10 @@ function updateDynamicGreeting(){
 /* ===============================
    DARK MODE
 ================================ */
-
-function initTheme(){
+function initTheme() {
 
     const themeBtn = document.querySelector(".theme-btn");
-
-    if(!themeBtn) return;
+    if (!themeBtn) return;
 
     themeBtn.onclick = () => {
 
@@ -53,15 +51,17 @@ function initTheme(){
 
         document.documentElement.setAttribute("data-theme", newTheme);
 
-        themeBtn.innerHTML =
-            newTheme === "dark"
-            ? '<i class="fas fa-sun"></i>'
-            : '<i class="fas fa-moon"></i>';
+        if (newTheme === "dark") {
+            themeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        }
 
     };
 
 }
 
+initTheme();
 
 /**
  * ===============================
